@@ -96,9 +96,16 @@ Alternatives:
 * Manual sql injection with cheatsheets like https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
 * Burp Suite (GUI tool)
 
-### Analyze a binary file
+### Analyze or crack a binary file
 
 **Best Practice:** Ghidra (GUI tool)
 
 Alternatives:
 * Use the `ltrace` command.
+
+### Crack a password protected zip file
+
+**Best Practice:** Run `fcrackzip -u -D -p ~/wordlists/rockyou.txt filename.zip`
+
+Alternatives:
+* None?
