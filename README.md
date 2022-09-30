@@ -20,6 +20,12 @@ Audacity is an audio editor that can be useful in certain CTF challenges that hi
 
 I personally prefer the `WMAP` scanner in metasploit but Nessus has some more power behind it, though it requires registration and isn't free if you want to unlock all of its abilities. Go to `https://www.tenable.com/downloads/nessus` and download the package for your repository (likely the Kali x64 .deb file). Then install it with `sudo dpkg -i ~/Downloads/[filename].deb`. Now run `/bin/systemctl start nessusd.service` to start the nessus service and head over to the web interface that nessus gave you. Now pick `Nessus Essentials` for the free version and register to get your activation code.
 
+### 4. Install Sherlock
+
+Sherlock allows you to find social media accounts by usernames. Might be useful for certain creative CTF challenges. Install with:
+
+`git clone https://github.com/sherlock-project/sherlock.git;cd sherlock;python3 -m pip install -r requirements.txt`
+
 ---
 
 ## Identification
@@ -58,6 +64,13 @@ Alternatives:
 
 Alternatives:
 * Ghidra (GUI tool)
+
+### Find online accounts by username
+
+**Best practice:** Use sherlock with `python3 sherlock username`.
+
+Alternatives:
+* Manually using google/bing/yandex/etc.
 
 ---
 
