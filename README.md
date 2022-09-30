@@ -1,8 +1,8 @@
 # CTF best practice
 
-## Setup
+This writeup assumes that you're using Kali Linux.
 
-This writeup assumes that you're using Kali Linux or in case you're not, that you at least know how to install the tools that Kali has installed by default. :)
+## Setup
 
 ### 1. Prepare wordlists
 
@@ -18,7 +18,7 @@ Audacity is an audio editor that can be useful in certain CTF challenges that hi
 
 ### 3. Install Nessus
 
-I personally prefer the `WMAP` scanner in metasploit but Nessus has some more power behind it, though it requires registration and isn't free if you want to unlock all of its abilities. Go to `https://www.tenable.com/downloads/nessus` and download the package for your repository (likely the Kali x64 .deb file). Then install it with `sudo dpkg -i ~/Downloads/[filename].deb`. Now run `/bin/systemctl start nessusd.service` to start the nessus service and head over to the web interface that nessus gave you. Now pick `Nessus Essentials` for the free version and register to get your activation code.
+Nessus requires registration and isn't free if you want to unlock all of its abilities but it's powerful and thus worth using. Go to `https://www.tenable.com/downloads/nessus` and download the package for your repository (likely the Kali x64 .deb file). Then install it with `sudo dpkg -i ~/Downloads/[filename].deb`. Now run `/bin/systemctl start nessusd.service` to start the nessus service and head over to the web interface that nessus gave you. Now pick `Nessus Essentials` for the free version and register to get your activation code.
 
 ### 4. Install Sherlock
 
