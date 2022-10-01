@@ -122,3 +122,10 @@ Alternatives:
 
 Alternatives:
 * None?
+
+### Connect to a port and repeatedly send data/answer questions
+
+**Best Practice:** Use the script provided in this repository at `/scripts/portquestions.py`.
+
+Alternatives:
+* None?
