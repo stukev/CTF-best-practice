@@ -129,3 +129,16 @@ Alternatives:
 
 Alternatives:
 * None?
+
+### Get data through XML injection/query
+
+**Best Practice:** Try `<root><excerpt>TESTING</excerpt></root>` to query the entire root of the XML.
+
+Alternatives:
+* None?
+
+### Flask Template injection to read/write data
+**Best Practice:** TODO
+
+Alternatives:
+* None?
