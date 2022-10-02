@@ -2,6 +2,21 @@
 
 This writeup assumes that you're using Kali Linux.
 
+
+## Index
+[Setup](#setup)
+- [Worldlist](#1-prepare-wordlists)
+- [Audacity](#1-install-audacity)
+- [Audacity](#1-install-nessus)
+- [Audacity](#1-install-sherlock)
+   
+[Identification](#identification)
+- [Filetype](#find-the-file-type-of-an-unknown-file)
+- [Hashtype](#find-the-hash-type-of-an-unknown-hash)
+- 
+... (finish quck access)
+
+
 ## Setup
 
 ### 1. Prepare wordlists
@@ -11,6 +26,8 @@ On Kali distros we have a selection of wordlists located in the `/usr/share/word
 `mkdir ~/wordlists;gunzip -c /usr/share/wordlists/rockyou.txt.gz > ~/wordlists/rockyou.txt`
 
 Now you'll be ready to feed your `~/wordlists/rockyou.txt` wordlist to your cracking tools.
+
+If you don't find it download the list [here](https://github.com/praetorian-inc/Hob0Rules/blob/master/wordlists/rockyou.txt.gz)
 
 ### 2. Install audacity
 
@@ -44,13 +61,23 @@ Alternatives:
 Alternatives:
 * https://hashes.com/en/tools/hash_identifier
 
-### Steganography/information hidden in pictures
+---
 
-**Best practice:** https://www.aperisolve.com/
+## Steganography
 
-Alternatives:
-* Use the `exiftool` command to check an image for exif data.
+### Hidden data in images
 
+- [Aperisolve](https://www.aperisolve.com/)
+- [Online Exif](https://exifdata.com/)
+- [Printout](#find-the-date-a-paper-was-printed-out)
+- [Hidden bits](https://incoherency.co.uk/image-steganography/)
+- [Png check](https://incoherency.co.uk/image-steganography/) -> ```apt-get install pngcheck```
+- `exiftool` command to check an image for exif data
+  
+
+### Hidden data in pdf's
+
+  **TODO**
 ### Check a file for audio data
 
 **Best practice:** Import the file in `audacity` and check the spectrum analyzer.
@@ -65,12 +92,22 @@ Alternatives:
 Alternatives:
 * Ghidra (GUI tool)
 
+### Find the date a paper was printed out
+
+Every modern printer adds to every printout some metadata in the form of yellow dots. These can be decoded with this table. Note: If the year is 5 it means 2005. Also: if you can't find the dots use a tool like [Aperisolve](#hidden-data-in-images) and look at the Image generated with th boosted blue tones.
+
+![](/assets/printer_code.png)
+
+
 ### Find online accounts by username
 
 **Best practice:** Use sherlock with `python3 sherlock username`.
 
 Alternatives:
 * Manually using google/bing/yandex/etc.
+
+
+
 
 ---
 
